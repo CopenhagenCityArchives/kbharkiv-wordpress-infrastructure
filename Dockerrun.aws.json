@@ -1,0 +1,14 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Ports": [
+      {
+        "ContainerPort": "80"
+      }
+    ],
+    "Volumes": [
+      {
+        "HostDirectory": "/wp-content",
+        "ContainerDirectory": "/var/www/html/wp-content"
+      }
+    ]
+  }

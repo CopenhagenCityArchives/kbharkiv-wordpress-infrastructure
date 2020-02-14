@@ -1,0 +1,29 @@
+
+maybe_use_later/
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# ignore everything in the root except the "wp-content" directory.
+wordpress
+!wordpress/wp-content/
+
+# ignore everything in the "wp-content" directory, except:
+# mu-plugins, plugins, and themes directories
+wordpress/wp-content/*
+!wordpress/wp-content/mu-plugins/
+!wordpress/wp-content/plugins/
+!wordpress/wp-content/themes/
+
+# ignore all mu-plugins, plugins, and themes
+# unless explicitly whitelisted at the end of this file
+wordpress/wp-content/themes/*
+
+# ignore index.php in plugins folder
+wordpress/wp-content/plugins/index.php
+
+# track these themes
+!wordpress/wp-content/themes/twentynineteen/
+.env
