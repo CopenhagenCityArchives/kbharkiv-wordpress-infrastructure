@@ -10,7 +10,7 @@ This project is used to configure and deploy a consistent and scalable environtm
 * The LinkLivesWordpressTheme project is hooked up with Travis-CI. On every push in the master branch, Travis-CI instantiates a new deployment on Elastic Beanstalk of this project, thus creating a new Wordpress website, with the newest version of the theme downloaded.
 
 # Deployment
-This project is deployed using ``eb deploy`` with the LinkLivesCMS environment selected.
+This project is deployed using ``eb deploy`` with the kbharkiv-cms-x environment selected.
 
 An automatic deployment of this project are instantiated whenever a new push is made on the master branch of LinkLivesWordpressTheme (see above). 
 
