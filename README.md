@@ -12,7 +12,7 @@ This project is used to configure and deploy a consistent and scalable environtm
 # Deployment
 This project is deployed using ``eb deploy`` with the LinkLivesCMS environment selected.
 
-An automatic deployment of this project are instantiated whenever a new push is made on the master branch of LinkLivesWordpressTheme (see above).
+An automatic deployment of this project are instantiated whenever a new push is made on the master branch of LinkLivesWordpressTheme (see above). 
 
 # Further reading
 The setup is partly inspired by this AWS tutorial: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/php-hawordpress-tutorial.html
