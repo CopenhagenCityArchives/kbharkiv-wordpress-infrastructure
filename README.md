@@ -1,4 +1,4 @@
-# kbharkiv CMS infrastructure [![Build Status](https://travis-ci.org/CopenhagenCityArchives/kbharkiv-wordpress-infrastructure.svg?branch=master)](https://travis-ci.org/CopenhagenCityArchives/linklives-wordpress-infrastructure)
+# kbharkiv CMS infrastructure [![Build Status](https://travis-ci.org/CopenhagenCityArchives/kbharkiv-wordpress-infrastructure.svg?branch=master)](https://travis-ci.org/CopenhagenCityArchives/kbharkiv-wordpress-infrastructure)
 This project is used to configure and deploy a consistent and scalable environtment for the kbharkiv.dk site.
 
 # The basics
