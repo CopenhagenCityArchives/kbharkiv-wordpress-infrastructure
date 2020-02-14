@@ -7,5 +7,5 @@ ENV WORDPRESS_DB_NAME=${WORDPRESS_DB_NAME}
 ENV WORDPRESS_TABLE_PREFIX=${WORDPRESS_TABLE_PREFIX}
 
 RUN echo "short_open_tag = Off" > $PHP_INI_DIR/conf.d/short_open_tag.ini
-
+ 
 EXPOSE 80
