@@ -11,5 +11,5 @@ deploy:
     secure: "${AWS_SECRET_ACCESS_KEY}"
   region: "eu-west-1"  
   app: "kbharkiv-cms"
-  env: "kbharkiv-cms-production-4"
+  env: "kbharkiv-production-4"
   bucket_name: "elasticbeanstalk-eu-west-1-282251075226"
