@@ -5,14 +5,7 @@ script:
 - docker build .
 deploy:
   provider: elasticbeanstalk
-  access_key_id:
-    secure: "${AWS_ACCESS_KEY}"
-  secret_access_key:
-    secure: "${AWS_SECRET_ACCESS_KEY}"
   region: eu-west-1
   app: kbharkiv-cms
   env: kbharkiv-production-4
   bucket_name: elasticbeanstalk-eu-west-1-282251075226
-env:
-  global:
-    secure: F8TBzwiEzs3DaeOxkmjyPKm1TfxHaR8aIuCUy+eVFpQWA0ZE/YPPBh1h0r1eagr7GeBBZgtoeLncsYrewvRjN+MoC6pp10IYXMJwQ/kWSW8+C5L1R5G5Hvm8tPxWxudXLviYD1v/8DepUOztl9L8JJkJ2IY0QvRr8Gzwsm8S3uqIEN/bDTc3/cG2h7UYeTo+9cWmKdmjazi7nCX3K0a+SHRRcrO+K3SKgR01Q/oeSHMxqrR2YEdAJ/5CT52JUU9Jq+TvOhDiPq81rgsUEsYKdAkS2hxcpdOJRnurZMzXXal3wEuy2kXH2eS7TFKlM95oO2/b44HbK8MrNEopN9WNMK+8LUIbKTK/gK+fLFlk0SiHwYSZxR6yqD+4VHpcGZwP1LwCdC2io1P4qR3OUhq3xGj/RjmECGOePYaLYhFrHOBzvHlVD56h/oP+Pkry0uxorfydi5ZYvnF0r+tl2keJ6ElNeJ4T4ReSXcWZwLZajU+/ZVLToO5IBvWDSzKL73sXKK6FkNyXN7+FEqyhqviU99VPTr254jG1IQJASAqT+P44cdJu3VYbN4eCILHC8SOPtsGd509mPMdZy1Jyc5+yXwmmswaSe+lCNrzCgrTYkKrE/LCwckMZznt1g8Vb1IDlF8dTbzx8DBgoSvi9jXou1txHh/uJ1Sx1DT18csgtEk4=
