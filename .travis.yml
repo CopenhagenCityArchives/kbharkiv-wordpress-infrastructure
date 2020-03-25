@@ -5,7 +5,6 @@ script:
 - docker build .
 deploy:
   provider: elasticbeanstalk
-  access_key_id: ${access_key_id}
-  secret_access_key: ${secret_access_key}
+  access_key_id: ${AWS_ACCESS_KEY_ID}
+  secret_access_key: ${AWS_SECRET_ACCESS_KEY}
   bucket: elasticbeanstalk-eu-west-1-282251075226
-  edge: true # opt in to dpl v2
