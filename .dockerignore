@@ -1,4 +1,9 @@
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-.git
+# Elastic Beanstalk Files
+
+.elasticbeanstalk/*
+
+.git
+
 .gitignore
+
+wordpress
