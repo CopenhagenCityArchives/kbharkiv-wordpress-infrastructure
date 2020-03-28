@@ -10,7 +10,5 @@
         "HostDirectory": "/wp-content",
         "ContainerDirectory": "/var/www/html/wp-content"
       }
-    ],
-    "Entrypoint": "docker-entrypoint.sh",
-    "Command": "apache2 --user root:ec2-user"
+    ]
   }
