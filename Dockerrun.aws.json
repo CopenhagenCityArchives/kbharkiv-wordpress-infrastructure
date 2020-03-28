@@ -12,5 +12,5 @@
       }
     ],
     "Entrypoint": "docker-entrypoint.sh",
-    "Command": "apache2 --user ec2-user:ec2-user"
+    "Command": "apache2 --user root:ec2-user"
   }
