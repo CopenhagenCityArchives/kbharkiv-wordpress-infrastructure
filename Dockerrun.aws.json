@@ -11,5 +11,6 @@
         "ContainerDirectory": "/var/www/html/wp-content"
       }
     ],
-    "Command": "--user ec2-user:ec2-user"
+    "Entrypoint": "docker-entrypoint.sh",
+    "Command": "php-fpm --user ec2-user:ec2-user"
   }
