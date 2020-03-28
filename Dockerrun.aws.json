@@ -12,5 +12,5 @@
       }
     ],
     "Entrypoint": "docker-entrypoint.sh",
-    "Command": "php-fpm --user ec2-user:ec2-user"
+    "Command": "--user ec2-user:ec2-user"
   }
