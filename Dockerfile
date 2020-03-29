@@ -8,8 +8,6 @@ ENV WORDPRESS_TABLE_PREFIX=${WORDPRESS_TABLE_PREFIX}
 
 RUN echo "short_open_tag = Off" > $PHP_INI_DIR/conf.d/short_open_tag.ini
 
-RUN groupadd -g 1000 ec2-user && \    
-    useradd -u 1000 -g root -m ec2-user && \   
-    usermod -p "*" ec2-user
+RUN mkdir /var/www/html/wp-content && chown -R www-data:www-data /var/www/html/wp-content
 
 EXPOSE 80
