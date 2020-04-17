@@ -11,5 +11,4 @@ deploy:
   app: kbharkiv-cms
   env: kbharkiv-production-4
   bucket: elasticbeanstalk-eu-west-1-282251075226
-  label: kbharkiv-${TRAVIS_COMMIT}
   edge: true
