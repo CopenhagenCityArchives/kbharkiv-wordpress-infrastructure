@@ -10,4 +10,8 @@ RUN echo "short_open_tag = Off" > $PHP_INI_DIR/conf.d/short_open_tag.ini
 RUN mkdir /var/www/html/wp-admin || true && chown -R www-data:www-data /var/www/html/wp-admin && chmod -R 0755 /var/www/html/wp-admin
 RUN mkdir /var/www/html/wp-content || true && chown -R www-data:www-data /var/www/html/wp-content && chmod -R 0755 /var/www/html/wp-content
 
+ENV WORDPRESS_CONFIG_EXTRA= |
+    define('WP_DEBUG', true );
+    define('FS_METHOD', 'direct');
+
 EXPOSE 80
