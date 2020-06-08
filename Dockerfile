@@ -1,4 +1,4 @@
-FROM wordpress:5.4.0-php7.3-apache
+FROM wordpress:5.4.1-php7.3-apache
 
 ENV WORDPRESS_DB_HOST=${WORDPRESS_DB_HOST}
 ENV WORDPRESS_DB_USER=${WORDPRESS_DB_USER}
