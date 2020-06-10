@@ -13,6 +13,6 @@ RUN echo $"upload_max_filesize = 128M;\npost_max_size = 128M;\nmax_execution_tim
 RUN mkdir /var/www/html/wp-admin || true && chown -R www-data:www-data /var/www/html/wp-admin && chmod -R 0755 /var/www/html/wp-admin
 RUN mkdir /var/www/html/wp-content || true && chown -R www-data:www-data /var/www/html/wp-content && chmod -R 0755 /var/www/html/wp-content
 
-ENV WORDPRESS_CONFIG_EXTRA="define('FS_METHOD', 'direct');define('upload_max_size','128M');"
+ENV WORDPRESS_CONFIG_EXTRA="define('FS_METHOD', 'direct');define('upload_max_size','128M');@ini_set( 'upload_max_size' , '128M' );@ini_set( 'post_max_size', '128M');@ini_set( 'memory_limit', '128M' );"
 
 EXPOSE 80
