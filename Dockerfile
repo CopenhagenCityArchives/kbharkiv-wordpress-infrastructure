@@ -9,10 +9,10 @@ ENV WORDPRESS_DEBUG=0
 ENV WP_DEBUG_DISPLAY=0
 
 RUN echo "short_open_tag = Off" > $PHP_INI_DIR/conf.d/short_open_tag.ini
-RUN echo $"upload_max_filesize = 128M;\npost_max_size = 128M;\nmax_execution_time = 120;\nmemory_limit=128M;" > $PHP_INI_DIR/conf.d/max_upload_size.ini
+RUN echo "upload_max_filesize = 128M\npost_max_size = 128M\nmax_execution_time = 120\nmemory_limit=128M" > $PHP_INI_DIR/conf.d/max_upload_size.ini
 RUN mkdir /var/www/html/wp-admin || true && chown -R www-data:www-data /var/www/html/wp-admin && chmod -R 0755 /var/www/html/wp-admin
 RUN mkdir /var/www/html/wp-content || true && chown -R www-data:www-data /var/www/html/wp-content && chmod -R 0755 /var/www/html/wp-content
 
-ENV WORDPRESS_CONFIG_EXTRA="define('FS_METHOD', 'direct');define('upload_max_size','128M');@ini_set( 'upload_max_size' , '128M' );@ini_set( 'post_max_size', '128M');@ini_set( 'memory_limit', '128M' );"
+ENV WORDPRESS_CONFIG_EXTRA="define('FS_METHOD', 'direct');"
 
 EXPOSE 80
