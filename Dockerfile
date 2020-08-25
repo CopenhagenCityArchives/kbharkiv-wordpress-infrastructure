@@ -5,8 +5,7 @@ ENV WORDPRESS_DB_USER=${WORDPRESS_DB_USER}
 ENV WORDPRESS_DB_PASSWORD=${WORDPRESS_DB_PASSWORD}
 ENV WORDPRESS_DB_NAME=${WORDPRESS_DB_NAME}
 ENV WORDPRESS_TABLE_PREFIX=${WORDPRESS_TABLE_PREFIX}
-ENV WORDPRESS_DEBUG=0
-ENV WP_DEBUG_DISPLAY=0
+
 
 RUN echo "short_open_tag = Off" > $PHP_INI_DIR/conf.d/short_open_tag.ini
 RUN echo "upload_max_filesize = 128M\npost_max_size = 128M\nmax_execution_time = 120\nmemory_limit=128M" > $PHP_INI_DIR/conf.d/max_upload_size.ini
